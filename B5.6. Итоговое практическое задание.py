@@ -48,14 +48,14 @@ def start(field):
             user = 'X'
         else:
             user = 'O'
-        if count<9:
-            x, y = users_input(field,user)
+        
+        if count < 9:
+            x, y = users_input(field, user)
             field[x][y] = user
-
         elif count == 9:
             print('Ничья')
             break
-        if position(field,user):
+        if position(field, user):
             print("---------------------------------------------")
             print(f"Выйграл игрок {user}")
             break
